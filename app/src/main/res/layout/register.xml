@@ -24,15 +24,26 @@
             android:src="@drawable/logo_login" />
 
         <EditText
+            android:id="@+id/phone"
+            style="@style/editext_graybg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_phone"
+            android:hint="@string/phone"
+            android:inputType="phone" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
             android:id="@+id/email"
             style="@style/editext_graybg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad_5dp"
             android:drawableLeft="@drawable/ic_username"
             android:hint="@string/email"
             android:inputType="textEmailAddress" >
-
-            <requestFocus />
         </EditText>
 
         <EditText
@@ -50,10 +61,21 @@
             style="@style/editext_graybg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/pad_20dp"
             android:layout_marginTop="@dimen/pad_5dp"
             android:drawableLeft="@drawable/ic_pwd"
             android:hint="@string/password"
+            android:inputType="textPassword" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/confirmPwd"
+            style="@style/editext_graybg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/pad_20dp"
+            android:layout_marginTop="@dimen/pad_5dp"
+            android:drawableLeft="@drawable/ic_pwd"
+            android:hint="@string/confirm_password"
             android:inputType="textPassword" >
         </EditText>
 

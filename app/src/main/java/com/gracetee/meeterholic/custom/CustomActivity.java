@@ -2,11 +2,13 @@ package com.gracetee.meeterholic.custom;
 
 import android.app.ActionBar;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 
 import com.gracetee.meeterholic.R;
 import com.gracetee.meeterholic.utils.TouchEffect;
+import com.parse.Parse;
 
 /**
  * This is a common activity that all other activities of the app can extend to

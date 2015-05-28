@@ -6,9 +6,11 @@
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
     <string name="or">or</string>
+    <string name="phone">Phone</string>
     <string name="email">Email</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
     <string name="register">Register</string>
     <string name="log_in">Log in</string>
     <string name="forgot_my_pwd">I’ve forgotten my password?</string>
@@ -19,11 +21,21 @@
     <string name="edit">Edit</string>
     <string name="new_chat">New Chat</string>
     <string name="alert_wait">Please wait...</string>
-    <string name="err_fields_empty">Please fill all the fields.</string>
-    <string name="err_singup">Error occurred while signup:</string>
-    <string name="err_login">Error occurred while login:</string>
-    <string name="err_users">Error occurred while finding users:</string>
     <string name="alert_loading">Loading...</string>
+
+    <string name="err_phone_taken">This phone number has already been registered, please login instead</string>
+    <string name="err_username_taken">Username is already taken, please choose a different one</string>
+    <string name="err_email_taken">Email is already taken, please choose a different one</string>
+    <string name="err_password_too_short">Password must be at least 8 characters long</string>
+    <string name="err_confirm_password">Passwords don\'t match, please try again</string>
+    <string name="err_invalid_email">Email is invalid, please correct it and try again</string>
+    <string name="err_signup_failed_unknown">Could not sign up, please try again later</string>
+    <string name="err_login_failed_unknown">Could not login, please try again later</string>
+    <string name="err_login_help_submit_failed_unknown">Failed to request password reset, please try again</string>
+    <string name="err_fields_empty">Please fill all the fields.</string>
+    <string name="err_users">Error occurred while finding users:</string>
+
+
     <string name="msg_no_user_found">No users found for chat!</string>
     <string name="title_activity_main_activity2">MainActivity2</string>
     <string name="hello_world">Hello world!</string>

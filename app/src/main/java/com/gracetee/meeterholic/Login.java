@@ -81,11 +81,20 @@ public class Login extends CustomActivity
 					}
 					else
 					{
-						Utils.showDialog(
-								Login.this,
-								getString(R.string.err_login) + " "
-										+ e.getMessage());
-						e.printStackTrace();
+                        switch (e.getCode()) {
+                            case ParseException.INVALID_EMAIL_ADDRESS:
+                                Utils.showDialog(Login.this,R.string.err_invalid_email);
+                                break;
+                            case ParseException.USERNAME_TAKEN:
+                                Utils.showDialog(Login.this,R.string.err_username_taken);
+                                break;
+                            case ParseException.EMAIL_TAKEN:
+                                Utils.showDialog(Login.this,R.string.err_email_taken);
+                                break;
+                            default:
+                                Utils.showDialog(Login.this,R.string.err_login_failed_unknown);
+                        }
+                        e.printStackTrace();
 					}
 				}
 			});
